@@ -1,59 +1,85 @@
-/*
-This is empty on purpose! Your code to build the resume will go here.
- */
- /* $("#main").append("Paul J Vandenberg"); */
+var work = {
+  "jobs" : [
+    {
+      "title" : "Clinical Applications Coordinator",
+      "employer" : "VA",
+      "dates" : "2012",
+      "location" : "Green Bay",
+      "description" : "Coordinated and supported clinical applications"
+    },
+    {
+      "employer" : "VA",
+      "title" : "Primary Care RN",
+      "dates" : "2011",
+      "location" : "Appleton",
+      "description" : "Patient Care Manager"
+    }
+  ]
+}
 
-/* Lesson 1 var quiz
-
-var awesomeThoughts = "I am Paul and I am AWESOME";
-console.log(awesomeThoughts);
-
-*/
-
-/* Lesson 1 string.replace Quiz
-
-var funThoughts = awesomeThoughts.replace("AWESOME", "FUN");
-console.log(funThoughts);
-
-$("#main").append(funThoughts);
-
-*/
-
-// Lesson 1 Resume Header quiz
-
-var name = "Paul J Vandenberg";
-var role = "Clinical Applications Coordinator";
-
-var formattedName = HTMLheaderName.replace("%data%", name);
-var formattedRole = HTMLheaderRole.replace("%data%", role);
-
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
-
-
-/* Lesson 1 String Manipulation Quiz 1*/
-
-var strStepOne = "audacity";
-var strStepTwo = "U" + strStepOne.slice(2);
-
-//console.log(strStepOne);
-//console.log(strStepTwo);
-
-var firstArray = ["zero", "one", "two"];
-console.log(firstArray.length);
-
-//Lesson 1 - bio
+var projects = {
+  "projects" : [
+    {
+      "title" : "Project 1",
+      "dates" : "1980",
+      "description" : "test project 1",
+      "images" : "/images/projects/1980/"
+    },
+    {
+      "title" : "Project 2",
+      "dates" : "1990",
+      "description" : "test project 2",
+      "images" : "/images/projects/1990/"
+    }
+  ]
+}
 
 var bio = {
-  "name" : "Pauly V",
-  "role" : "CAC",
+  "name" : "Paul J Vandenberg",
+  "role" : "Clinical Applications Coordinator/Developer",
+  "welcomeMessage" : "Welcome!!",
   "contacts" : {
-    "phone" : "9208103227",
-    "email" : "paul.john.vandenberg@gmail.com"
+    "mobilePhone" : "(920)810-3227",
+    "workPhone" : "(920)431-2629",
+    "homeEmail" : "paul.john.vandenberg@gmail.com",
+    "location" : "Kaukauna, WI"
   },
-  "welcomeMessage" : "Hello There",
   "skills" : ["skill1", "skill2"],
   "bioPic" : "/images/fry.jpg"
 }
 
-$("#main").append(bio.name);
+var education = {
+  "schools" : [
+    {
+      "name" : "UW Oshkosh",
+      "location" : "Oshkosh, WI",
+      "degree" : "BSN",
+      "majors" : ["Nursing"],
+      "dates" : 2009,
+      "url" : "http://www.uwosh.edu"
+    },
+    {
+      "name" : "UW Fox Valley",
+      "yearGraduated" : 2005,
+      "location" : "Menasha, WI",
+      "degree" : "Associate Degree",
+      "url" : "http:.//www.uwfox.edu",
+      "majors" : ["General Education"]
+    }
+  ],
+  "onlineCourses" : [
+    {
+      "title" : "JavaScript Basics",
+      "school" : "Udacity",
+      "dates" : 2015,
+      "url" : "http://www.udacity.com",
+    },
+    {
+      "title" : "Introduction to Health Informatics",
+      "school" : "Health Informatics Online Classroom",
+      "dates" : 2014,
+      "url" : "http://vatraining.remote-learner.net/",
+    }
+  ]
+
+}
